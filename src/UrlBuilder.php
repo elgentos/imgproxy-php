@@ -55,7 +55,7 @@ class UrlBuilder
         string $fit = "fit",
         string $gravity = "sm",
         bool $enlarge = false,
-        string $extension = null
+        ?string $extension = null
     ): Url {
         return (new Url($this, $imageUrl, $w, $h))
             ->setFit($fit)
