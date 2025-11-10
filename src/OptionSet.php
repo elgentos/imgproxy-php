@@ -182,7 +182,7 @@ class OptionSet
         return $this->get(ProcessingOption::CROP);
     }
 
-    private function gravityOptions(?string $type = null, array $defaults, $x = null, $y = null): array
+    private function gravityOptions(string $type, array $defaults, $x = null, $y = null): array
     {
         switch ($type) {
             case null:
