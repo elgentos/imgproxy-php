@@ -133,7 +133,7 @@ class OptionSet
         return $this->firstValue(ProcessingOption::ENLARGE, 'bool');
     }
 
-    public function withExtend(string $gravityType = null, $gravityX = null, $gravityY = null): self
+    public function withExtend(?string $gravityType = null, $gravityX = null, $gravityY = null): self
     {
         if ($gravityType === Gravity::SMART) {
             throw new \InvalidArgumentException("extend doesnt support smart gravity");
